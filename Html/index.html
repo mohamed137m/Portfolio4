@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة جارية</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>صدقة جارية - للاستاذ - محمد كامل</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">الرئيسية</a></li>
+                <li><a href="#about">عن المتوفى</a></li>
+                <li><a href="#content">المحتوى الديني</a></li>
+                <li><a href="#daily-prayer">أذكار يومية</a></li>
+            </ul>
+        </nav>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">تبديل الوضع</button>
+    </header>
+
+    <main>
+        <section id="intro" class="section">
+            <h2>مرحبا بكم</h2>
+            <p>هذا الموقع تم إنشاؤه كصدقة جارية للمرحوم محمد كامل، نسأل الله أن يتقبل منا ومنكم صالح الأعمال.</p>
+            <a href="#daily-prayer" class="btn">اكتشف الأذكار اليومية</a>
+        </section>
+
+        <section id="about" class="section">
+            <h2>عن المرحوم محمد كامل</h2>
+            <p>الاسم / الاستاذ محمد كامل محمد أحمد
+              <br>
+              مواليد ١٩٧٣ 
+              <br>
+             محافظة المنيا مركز مطاي ابن قريه عباس رحمي
+               مدرس تربيه رياضيه سابقا 
+               <br>
+              والان أصبح مدير مدرسه عباس رحمي 
+             دائما بيسعي للخير وحل المشاكل شخصية جميله جدا وبسيطة واجتماعية ومحترمة وبشوشه  عنده بنته الكبيرة في الجامعة وابن ثانوية عامة وابن في الابتدائيه </p>
+        </section>
+
+        <section id="content" class="section">
+            <h2>المحتوى الديني</h2>
+            <div class="grid-container">
+                <div>
+                    <h3>القران الكريم</h3>
+                    <ul>
+                        <li><a href="https://youtu.be/pUb9EW770d0?si=sfVthyh4LAN7qoBw">الفاتحه</a></li>
+                        <li><a href="https://www.youtube.com/live/qPETHvRyXjk?si=ggRRGpngcE_XnYXe">البقره</a></li>
+                        <li><a href="https://youtu.be/7Y8kclmSZok?si=CBrOU5KYhZd0O843">ال عمران</a></li>
+                    </ul>
+                    <hr>
+                    <video controls src="/Videos/MohamedReda.mp4" style="width: 25%;"></video>
+                    <video controls src="/Videos/Facebook 149571211486520(Source).mp4" style="width: 25%;"></video>
+                    <video controls src="/Videos/VID_20231203_011654_354.mp4" style="width: 25%;"></video>
+                    <video controls src="/Videos/VID_20240220_183826_542.mp4" style="width: 25%;"></video>
+                    <video controls src="/Videos/VID_20240220_194747_376.mp4" style="width: 25%;"></video>
+                    <video controls src="/Videos/VID_20240705_223428_561.mp4" style="width: 25%;"></video>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="daily-prayer" class="section">
+            <h2>أذكار يومية</h2>
+            <p>اضغط على الزر أدناه للحصول على ذكر يومي.</p>
+            <button class="btn" onclick="showDailyQuote()">احصل على ذكر</button>
+            <p class="daily-quote" id="dailyQuote"></p>
+        </section>
+
+        <section id="quranic-verses" class="section">
+            <h2>آيات قرآنية</h2>
+            <p>قُلْ هُوَ اللَّهُ أَحَدٌ</p>
+            <p>اللَّهُ الصَّمَدُ</p>
+            <p>لَمْ يَلِدْ وَلَمْ يُولَدْ</p>
+            <p>وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</p>
+        </section>
+
+        <section id="electronic-rosary" class="section">
+            <h2>المسبحة الإلكترونية</h2>
+            <div class="counter" id="rosaryCounter">0</div>
+            <button class="btn" onclick="incrementCounter('rosaryCounter')">عد</button>
+            <button class="btn" onclick="resetCounter('rosaryCounter')">إعادة تعيين</button>
+        </section>
+
+        <section id="salat-ala-nabi" class="section">
+            <h2>الصلاة على النبي</h2>
+            <div class="counter" id="salatCounter">0</div>
+            <button class="btn" onclick="incrementCounter('salatCounter')">عد</button>
+            <button class="btn" onclick="resetCounter('salatCounter')">إعادة تعيين</button>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <p>&copy; Mohamed Reda 2024 جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="/Js/script.js"></script>
+</body>
+</html>
